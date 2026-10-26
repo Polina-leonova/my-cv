@@ -198,15 +198,16 @@ body {
 
 .tag {
   font-family: 'JetBrains Mono', monospace;
-  font-size: 10.5px;
+  font-size: 10px;
   background: #f8fafc;
   border: 1px solid var(--border-color);
   padding: 2px 7px;
   border-radius: 4px;
   color: var(--text-dark);
-  display: inline-flex;
-  align-items: center;
-  width: auto !important; 
+  display: inline-block !important;
+  width: auto !important;
+  max-width: fit-content !important;
+  flex: 0 0 auto !important; 
 }
 
 .tag.highlight {
