@@ -156,56 +156,57 @@ body {
   line-height: 1.45;
 }
 
-/* SKILLS */
+
 .skills-grid {
   display: flex;
   flex-direction: column;
-  gap: 5px;
+  gap: 8px;
 }
 
 .skill-group {
   display: flex;
-  flex-direction: column;
-  gap: 3px;
+  flex-wrap: wrap; 
+  align-items: center;
+  gap: 4px 6px;
+}
+
+.skill-label {
+  font-size: 11.5px;
+  font-weight: 700;
+  color: var(--text-muted);
+  width: 100%; 
+  margin-bottom: 2px;
 }
 
 @media (min-width: 640px) {
   .skill-group {
-    flex-direction: row;
-    align-items: flex-start;
-    gap: 8px;
+    align-items: baseline;
+    gap: 6px;
   }
-}
-
-.skill-label {
-  font-size: 11px;
-  font-weight: 600;
-  color: var(--text-muted);
-}
-
-@media (min-width: 640px) {
   .skill-label {
-    width: 135px;
+    width: 135px; 
     flex-shrink: 0;
-    padding-top: 2px;
+    margin-bottom: 0;
   }
 }
 
 .tags-wrapper {
-  display: flex;
+  display: inline-flex;
   flex-wrap: wrap;
-  gap: 4px;
+  gap: 4px 6px;
 }
 
 .tag {
   font-family: 'JetBrains Mono', monospace;
-  font-size: 10px;
+  font-size: 10.5px;
   background: #f8fafc;
   border: 1px solid var(--border-color);
-  padding: 1.5px 6px;
+  padding: 2px 7px;
   border-radius: 4px;
   color: var(--text-dark);
-  display: inline-block;
+  display: inline-flex;
+  align-items: center;
+  width: auto !important; 
 }
 
 .tag.highlight {
